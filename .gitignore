@@ -1,13 +1,49 @@
-﻿# Ignore large csv data files that should stay local only
+﻿# ============================================================================
+# Large Data Files
+# ============================================================================
+# These CSV files are ignored locally to avoid sync issues.
+# If committed to repository, they are tracked with Git LFS (see .gitattributes)
 klavi_profile_market_share_case.csv
 klavi_checking_saving_transactions_market_share_case.csv
 klavi_credit_transactions_market_share_case.csv
 klavi_profile_market_share_case - 1.csv
-klavi_profile_market_share_case - 1.csv
 klavi_checking_saving_transactions_market_share_case-1.csv
 klavi_credit_transactions_market_share_case-1.csv
-# Common Python ignores
+
+# ============================================================================
+# Python Environment & Cache
+# ============================================================================
 __pycache__/
 *.py[cod]
-.env
+*.so
+.Python
+env/
+venv/
 .venv/
+*.egg-info/
+dist/
+build/
+
+# ============================================================================
+# IDE & Environment
+# ============================================================================
+.env
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============================================================================
+# Jupyter Notebook
+# ============================================================================
+# Note: .ipynb files are tracked by Git LFS (see .gitattributes)
+.ipynb_checkpoints/
+.jupyter/
+
+# ============================================================================
+# OS Files
+# ============================================================================
+.DS_Store
+Thumbs.db
+
