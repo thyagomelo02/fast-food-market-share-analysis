@@ -30,7 +30,29 @@ pip install pandas numpy matplotlib seaborn plotly scikit-learn statsmodels pyte
 jupyter notebook klavi_market_share_analysis.ipynb
 ```
 
-### 3. Executar Célula por Célula
+### 3. Gerar Visualizações HTML (Recomendado)
+
+Para manter o notebook leve no repositório, as visualizações Plotly são salvas como arquivos HTML:
+
+```bash
+python generate_outputs.py
+```
+
+Isso criará arquivos HTML interativos em `outputs/`:
+- `dashboard_completo.html` - Dashboard executivo com KPIs
+- `segmentacao_renda.html` - Análise por classe de renda
+- `segmentacao_idade.html` - Análise por faixa etária
+- `segmentacao_regiao.html` - Análise por região geográfica
+- `marca_por_renda.html` - Preferência de marca por renda
+- `marca_por_regiao.html` - Preferência de marca por região
+- `metodo_pagamento_renda.html` - Método de pagamento por renda
+- `segmentacao_valor_boxplot.html` - Distribuição de gasto
+- `segmentacao_valor_pie.html` - Distribuição de clientes
+- `analise_multidimensional.html` - Análise cruzada (Renda × Idade × Região)
+
+**Nota**: Git LFS é usado para versionar estes arquivos HTML sem deixar o repositório pesado.
+
+### 4. Executar Célula por Célula
 
 O notebook está organizado em seções:
 
@@ -146,6 +168,30 @@ Funções de processamento e limpeza:
 - **Plotly** - Visualizações interativas
 - **Scikit-learn** - Machine learning (clustering, scaling)
 - **Statsmodels** - Análises estatísticas
+- **Git LFS** - Versionamento de arquivos grandes (HTML, CSV)
+
+## Armazenamento com Git LFS
+
+Este repositório usa **Git Large File Storage (LFS)** para versionar arquivos grandes sem deixar o repositório pesado:
+
+### Configuração (já realizada)
+```bash
+git lfs install
+git lfs track "*.html"
+git lfs track "*.csv"
+git lfs track "*.ipynb"
+```
+
+### Arquivos rastreados por LFS:
+- `*.html` - Visualizações interativas (outputs/)
+- `*.csv` - Dados brutos e processados
+- `*.ipynb` - Notebook com potencial para outputs grandes
+
+### Para clonar o repositório:
+```bash
+git clone <repository-url>
+git lfs pull  # Baixar arquivos grandes
+```
 
 ## Contato & Suporte
 
