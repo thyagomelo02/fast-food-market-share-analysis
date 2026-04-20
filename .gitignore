@@ -1,0 +1,13 @@
+﻿# Ignore large csv data files that should stay local only
+klavi_profile_market_share_case.csv
+klavi_checking_saving_transactions_market_share_case.csv
+klavi_credit_transactions_market_share_case.csv
+klavi_profile_market_share_case - 1.csv
+klavi_profile_market_share_case - 1.csv
+klavi_checking_saving_transactions_market_share_case-1.csv
+klavi_credit_transactions_market_share_case-1.csv
+# Common Python ignores
+__pycache__/
+*.py[cod]
+.env
+.venv/
