@@ -35,7 +35,8 @@ jupyter notebook klavi_market_share_analysis.ipynb
 Para manter o notebook leve no repositório, as visualizações Plotly foram salvas como arquivos HTML e PNG:
 
 ```
-Verifique a pasta Outputs para analisar todos os gráficos criados para as análises do projeto, caso nao seja possível visualizar o gráfico via GITHUB, será necessário realizar o download dos arquivos HTML e PNG
+Verifique a pasta Outputs para analisar todos os gráficos criados para as análises do projeto,
+caso nao seja possível visualizar o gráfico via GITHUB, será necessário realizar o download dos arquivos HTML e PNG
 ```
 O notebook está organizado em seções:
 
