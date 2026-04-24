@@ -32,7 +32,7 @@ jupyter notebook klavi_market_share_analysis.ipynb
 
 ### 3. Gerar Visualizações HTML
 
-Para manter o notebook leve no repositório, as visualizações Plotly foram salvas como arquivos HTML e PNG:
+Por conta de problemas com o output do jupyter no github, náo foi possível gerar os gráficos imediatamente abaixo dos códigos no git, então para manter o notebook leve no repositório, as visualizações Plotly foram salvas como arquivos HTML e PNG:
 
 ```
 Verifique a pasta Outputs para analisar todos os gráficos criados para as análises do projeto,
